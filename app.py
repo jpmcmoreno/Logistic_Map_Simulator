@@ -36,6 +36,7 @@ for i in range(1, n):
 
 st.subheader("Gráfico")
 # Gráfico
+plt.figure(figsize=(8, 6))  # Establece un tamaño de 8x6 pulgadas
 plt.plot(range(n), x * K, marker='o', label="Población")
 plt.axhline(K, color='red', linestyle='--', label="Capacidad de carga (K)")
 plt.title("Dinámica poblacional")
