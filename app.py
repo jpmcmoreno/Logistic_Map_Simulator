@@ -21,6 +21,8 @@ n = st.slider(label = "Seleccione el número de pasos", min_value = 1, max_value
 
 # Inicialización (variables de gráfico)
 x = np.zeros(n)
+if K == 0:
+    K = 0.0001
 x[0] = x_0 / K    # Escalar población inicial a proporción de K
 
 # Cálculo
