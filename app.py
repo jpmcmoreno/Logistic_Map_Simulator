@@ -14,7 +14,7 @@ n = 0           # Número de pasos
 st.title("Simulador de la ecuación logística.")
 
 x_0 = st.slider(label = "Seleccione la pobacion inicial", min_value = 0, max_value = 1000, value = 30, step = 1)
-K = st.slider(label = "Seleccione la capacidad de carga", min_value = x_0, max_value = 100000, value = 100000, step = 10)
+K = st.slider(label = "Seleccione la capacidad de carga", min_value = x_0, max_value = 100000, value = 100000, step = 1000)
 r = st.slider(label = "Selecccione la tasa de crecimiento", min_value = 0., max_value = 5., value = 1., step = 0.1)
 n = st.slider(label = "Seleccione el número de pasos", min_value = 1, max_value = 100, value = 10, step = 1)
 
